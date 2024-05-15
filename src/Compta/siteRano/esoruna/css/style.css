@@ -1,0 +1,226 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+/*============= TOP BAR HEADER =============*/
+.carousel-inner{
+
+    height: 25rem;
+    background: black;
+}
+.top-bar{
+  background: #7aaec4;
+  height: 2rem;
+  padding:0px;
+
+}
+.top-bar a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 50px;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img {
+  height: 3rem;
+
+}
+.navbar{
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+ height: 3rem;
+  z-index: 1;
+  padding: -20px;
+}
+.nav-item{
+  padding: 0.5rem;
+}
+.nav-link {
+  color: blue!important;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #4981b3!important;
+}
+navbar{
+  box-shadow: 0.5rem .5rem rgba(0,0,0,.1);
+}
+/*============= CAROUSEL =============*/
+
+#carousel{
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+.carouszl-inner {
+  max-height: 38rem!important;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+  transition: transform 2.2s ease;
+}
+
+/*-- Carousel Content --*/
+
+.carousel-caption{
+  position: absolute;
+  top: 54%;
+  text-transform: uppercase;
+  transform: translateY(-100%);
+}
+.bg-custom{
+  background-color: rgba(0,0,0, .4);
+  color: white;
+  border-radius: 1rem;
+
+}
+.carousel-caption{
+  font-size: 3.8rem;
+  text-shadow: .05rem .1rem .1rem rgb(0,0,0, 1);
+
+}
+.btn-primary:hover,
+.bnt-primary:focus{
+  background-color: #68a0d2!important;
+  border: .05rem solid #68a0d2!important;
+}
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-backgrwound {
+  padding: 10rem 0;
+  background-image: url(../img/matrix.jpg);
+  position: fixed;
+ 
+}
+ /*-- Correction for iOS --*/
+
+
+
+/*-- Emoji Navbar --*/
+
+
+#background-video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  }
+  
+  h1, h2, #btnVideo{
+    color: white;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1 {
+  font-size: 6rem;
+  margin-top: 30vh;
+  }
+  
+  h2 { font-size: 3rem; }
+  
+  #btnVideo{
+  font-size: 1.5rem;
+  background: 0;
+  border: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  }
+/*============= FOOTER  eto le fanandramana le login=============*/
+h4{
+
+  color: rgb(0, 204, 0);
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+}
+.log{
+  background-color: #68a0d2;
+}
+.boite{
+  background: linear-gradient(To Right, rgb(241, 241, 241), rgb(238, 238, 238));
+}
+/*============= SOCKET =============*/
+
+.modal-content{
+  background: linear-gradient(To Right, rgb(241, 241, 241), rgb(238, 238, 238));
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
